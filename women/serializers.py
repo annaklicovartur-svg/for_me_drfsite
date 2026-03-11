@@ -8,9 +8,7 @@ from .models import Women
 
 
 class WomenSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Women
-        fields = "__all__"
-
-
+    class Meta:                 # Внутренний класс с настройками 
+        model = Women           # Указываем, с какой моделью работаем
+        fields = "__all__"      # Указываем, какие поля включаем
 
